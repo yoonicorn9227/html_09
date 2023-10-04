@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Position-Visiblity</title>
+		<style>
+		*{margin:0; padding: 0;}
+		section{width: 800px; height: 200px; border: 5px solid black;
+		display: flex;}
+			div{width: 200px; height: 200px; text-align: center; font-size: 30px;}
+			.c01{background: green;}
+			.c02{background: yellow;}
+			/*.c02:hover{display: none;} 공간도 삭제됨*/
+			/*.c02:hover{display: hidden;} 공간은 존재*/
+			.c03{background: blue;}
+		
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="c01">1</div>
+			<div class="c02">2</div>
+			<div class="c03">3</div>
+		</section>
+	</body>
+</html>

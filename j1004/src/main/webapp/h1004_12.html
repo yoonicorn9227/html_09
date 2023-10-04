@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Position3</title>
+		<style>
+			*{margin:0; padding: 0;}
+			section{width: 1000px; height: 1000px; box-sizing: border-box;
+			border: 2px solid black;}
+			.c01,.c02,.c03,.c04,.c05,.c06,.c07{
+				width: 100px; height: 100px; background: blueviolet ;
+				position: relative;}
+			.c01{left:900px}
+			.c02{left:100px}
+			
+			.s01{position: relative; left: 300px; top:200px;}
+			.c04{left: 100px; top:-100px}
+			.c05{left: 300px; top:-200px}
+			
+			.c06{top:400px}
+			.c07{left:800px; top:200px}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="c01">1</div>
+			<div class="c02">2</div>
+			<div class="s01">
+				<div class="c03">3</div>
+				<div class="c04">4</div>
+				<div class="c05">5</div>
+			</div>
+			<div class="c06">6</div>
+			<div class="c07">7</div>
+		</section>
+	
+	</body>
+</html>
