@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Z-index</title>
+		<style>
+			*{margin: 0; padding: 0;}
+			div{width: 300px; height: 300px; border: 1px solid black ;
+				box-sizing: border-box; font-size: 30px; position: relative;}
+			.c01{background: red; left: 100px; z-index: 7;}
+			.c02{background: yellow; top: -100px; z-index: 3;}
+			.c03{background: green; left: 250px; top:-450px; z-index: 1;}
+		</style>
+	</head>
+	<body>
+		<div class="c01">1</div>
+		<div class="c02">2</div>
+		<div class="c03">3</div>
+	</body>
+</html>

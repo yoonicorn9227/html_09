@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>nth_child</title>
+		<style>
+			*{margin:0; padding: 0;}
+		li{list-style: none; text-align: center;
+			width: 150px; height: 40px; border: 1px solid black;}
+		li:nth-child(2n+1){
+			background: yellow;
+		}
+		li:nth-of-type(4){
+			background: green;
+		}
+		li:nth-child(8){
+			background: red;
+		}
+		li:first-child{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		li:last-child{
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>블루베리</li>
+			<h4>aaa</h4>
+			<li>귀리</li>
+			<li>토마토</li>
+			<li>시금치</li>
+			<li>적포도주</li>
+			<li>견과류</li>
+			<li>브로콜리</li>
+			<li>연어</li>
+			<li>마늘</li>
+			<li>녹차</li>
+		</ul>
+	
+	</body>
+</html>
