@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Animation</title>
+		<style>
+			/* css 주석 */
+			*{padding: 0; margin: 0;}
+			div{width: 200px; height: 200px; border: 1px solid black;
+			margin: 30px auto; background: blue;
+			/*
+			animation-name:ch_back;
+			animation-duration: 3s;
+			animation-direction:alternate ;
+			animation-iteration-count: infinite ;
+			*/
+			animation:ch_back 2s infinite alternate, moving 1s infinite;
+			}
+			@keyframes ch_back{
+				from{
+					background: blue;
+				}
+				to{
+					background: #a5d6ff;
+					border:10px solid red;
+					border-radius: 50%;
+					transform: translateX(500px);
+				}	
+			}
+			@keyframes moving{
+				from{
+					transform: rotateY(0);
+				}
+				to{
+					transform: rotateY(180deg);					
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

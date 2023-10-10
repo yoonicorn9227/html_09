@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+			<style>
+			/* css 주석 */
+			*{padding: 0; margin: 0;}
+			.box{width: 200px; height: 200px; margin:30px auto;
+				animation: back 1.5s infinite alternate, rotate 1.5s infinite;
+				}
+			@keyframes rotate{
+				0%{transform: perspective(170px) rotateX(0deg) rotateY(0deg);}
+				50%{transform: perspective(170px) rotateX(-180deg) rotateY(0deg);}
+				100%{transform: perspective(170px) rotateX(-180deg) rotateY(-180deg);}
+			}
+			@keyframes back{
+				0%{background: red;}
+				50%{background: green;}
+				100%{background: blue;}
+			}
+			</style>
+			
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
