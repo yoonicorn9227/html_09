@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>미디어 쿼리2</title>
+		<meta name="viewport" content="width=device-width, intital-scale=1">
+		<style>
+			*{margin: 0; padding: 0;}
+			section{width: 90%; height: 1600px; margin:0 auto; border: 3px solid black;}
+			article{display: flex;}
+			#top1{width: 45%; height: 400px; background: url('images/k1.jpg') no-repeat;
+			background-size: cover;
+			}
+			#top2{width: 30%; height: 400px; background: url('images/k2.jpg') no-repeat;
+			background-size: cover;
+			}
+			#top3{width: 25%; height: 400px; background: url('images/k3.jpg') no-repeat;
+			background-size: cover;
+			}
+			#middle{width:100%; height: 500px; background: url('images/k4.jpg') no-repeat;
+			background-size: cover;
+			}
+			@media screen and (max-width:800px){
+			   article{
+					#top1{width:60%; height:400px; background:url('images/k1.jpg') no-repeat;
+				       background-size: cover;
+				     }
+				    #top2{width:40%; height:400px; background:url('images/k2.jpg') no-repeat;
+				       background-size: cover; }
+				    #top3{display: none; }
+			}
+					/* bottom 부분 */
+					#bottom{display: block;}
+					#bottom>div:nth-child(1){width: 33.3%; height: 400px; background: url('images/k6.jpg')0-250px no-repeat;
+					background-size: cover;}
+					#bottom>div:nth-child(2){width: 33.3%; height: 400px; background: url('images/k7.jpg') no-repeat;
+					background-size: cover;}
+					#bottom>div:nth-child(3){width: 33.3%; height: 400px; background: url('images/k8.jpg') no-repeat;
+					background-size: cover;}
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<section>
+			<article>
+				<div id="top1"></div>
+				<div id="top2">
+					<div></div>
+					<div></div>
+				</div>
+				<div id="top3"></div>
+			</article>
+			<div id="middle"></div>
+			<div id="bottom">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
+	</body>
